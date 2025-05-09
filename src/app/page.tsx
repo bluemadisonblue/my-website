@@ -52,6 +52,7 @@ export default function Home() {
         <div className="flex-1 text-left">
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-2">Hi, I&apos;m Enes <span className="inline-block align-middle">👋</span></h1>
           <p className="text-lg sm:text-xl text-gray-200 mb-4 font-semibold">Software Engineer &amp; AI Enthusiast</p>
+          <p className="text-sm italic text-gray-400 mb-2">Currently in 🇬🇧</p>
         </div>
         <div className="flex-shrink-0 flex items-center justify-center">
         <Image
