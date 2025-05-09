@@ -22,7 +22,7 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
           <Link href="/" className="flex items-center justify-center text-gray-200 hover:text-blue-400 transition">
             <HomeIcon className="h-5 w-5" />
           </Link>
-          <a href="https://t.me/yourtelegram" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center text-gray-200 hover:text-blue-400 transition">
+          <a href="https://t.me/tyuiqak" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center text-gray-200 hover:text-blue-400 transition">
             <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M22 2L11 13" />
               <path d="M22 2L15 22L11 13L2 9L22 2Z" />
@@ -38,10 +38,10 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
           <button
             aria-label="Toggle Dark Mode"
             className="flex items-center justify-center text-gray-200 focus:outline-none hover:text-blue-400 transition"
-            onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
+            onClick={() => alert('Who uses white theme?)')}
             type="button"
           >
-            {resolvedTheme === 'dark' ? <SunIcon className="h-5 w-5" /> : <MoonIcon className="h-5 w-5" />}
+            <SunIcon className="h-5 w-5" />
           </button>
         </nav>
       </div>
