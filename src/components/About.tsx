@@ -46,8 +46,8 @@ const About = () => {
           >
             <h3 className="text-2xl font-bold mb-4">My Journey</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              With over X years of experience in software development, I've worked on various
-              projects ranging from web applications to mobile apps. I'm particularly
+              With over X years of experience in software development, I&apos;ve worked on various
+              projects ranging from web applications to mobile apps. I&apos;m particularly
               interested in creating user-friendly interfaces and optimizing application
               performance.
             </p>
@@ -61,7 +61,7 @@ const About = () => {
           >
             <h3 className="text-2xl font-bold mb-4">Skills</h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-              {skills.map((skill, index) => (
+              {skills.map((skill) => (
                 <div
                   key={skill}
                   className="bg-white dark:bg-gray-700 rounded-lg p-3 shadow-sm"
