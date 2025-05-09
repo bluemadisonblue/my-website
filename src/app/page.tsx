@@ -1,6 +1,5 @@
 "use client";
 import Image from 'next/image';
-import { useState, useRef, useEffect } from 'react';
 
 const experiences = [
   {
@@ -24,28 +23,6 @@ const experiences = [
 ];
 
 export default function Home() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-  const contentRefs = useRef<(HTMLDivElement | null)[]>([]);
-  const [heights, setHeights] = useState<number[]>([]);
-
-  useEffect(() => {
-    setHeights(contentRefs.current.map(ref => ref?.scrollHeight || 0));
-  }, []);
-
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      const target = event.target as HTMLElement;
-      if (!target.closest('.experience-content')) {
-        setOpenIndex(null);
-      }
-    };
-
-    document.addEventListener('click', handleClickOutside);
-    return () => {
-      document.removeEventListener('click', handleClickOutside);
-    };
-  }, []);
-
   return (
     <div className="min-h-screen w-full flex flex-col items-center justify-center bg-transparent">
       <section className="w-full max-w-2xl mx-auto flex flex-row items-center justify-between gap-6 mt-12 mb-8 px-4">
