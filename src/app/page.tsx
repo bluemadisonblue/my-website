@@ -9,13 +9,13 @@ const experiences = [
     logoLink: 'https://www.ycx.ai/',
     title: 'Artificial Intelligence Intern',
     period: 'Mar 2025 – Apr 2025',
-    location: 'London, UK (Hybrid)',
+    location: 'London, United Kingdom',
     description: 'Worked on algorithms and AI projects, gaining hands-on experience in a hybrid environment.'
   },
   {
     company: 'Freelance',
-    logo: null,
-    logoLink: null,
+    logo: '/images/freelance.jpeg',
+    logoLink: 'https://www.upwork.com/',
     title: 'Freelance Software Developer',
     period: 'Apr 2022 – Jun 2024',
     location: 'Atyrau, Kazakhstan (Remote)',
@@ -68,7 +68,7 @@ export default function Home() {
       <section className="w-full max-w-2xl mx-auto mb-8 px-4">
         <h2 className="text-2xl font-bold text-white mb-2">My Story</h2>
         <p className="text-gray-300 mb-2">
-          I&apos;m a software engineer with three years of experience in mobile development, now focused on integrating artificial intelligence into product design to build solutions that can truly make a difference. Recently completed professional program from <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" className="text-white font-semibold underline hover:text-blue-300">Google</a>, where I deepened my expertise in mobile application development. I thrive in diverse, collaborative teams and constantly seek opportunities to grow — both as a developer and as a person.
+          I&apos;m a software engineer with several years of experience in mobile development, now focused on integrating artificial intelligence into product design to build solutions that can truly make a difference. Recently completed professional program from <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" className="text-white font-semibold underline hover:text-blue-300">Google</a>, where I deepened my expertise in mobile application development. I thrive in diverse, collaborative teams and constantly seek opportunities to grow — both as a developer and as a person.
         </p>
         <p className="text-blue-400 italic">&quot;Always learning, always building.&quot;</p>
       </section>
@@ -163,7 +163,7 @@ export default function Home() {
         <h2 className="text-2xl font-bold text-white mb-2">Let&apos;s Connect</h2>
         <p className="text-gray-300 mb-4">Feel free to reach out via any platform below!</p>
         <div className="flex justify-center gap-6">
-          <a href="https://t.me/yourtelegram" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 text-2xl" aria-label="Telegram">
+          <a href="https://t.me/tyuiqak" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 text-2xl" aria-label="Telegram">
             <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M22 2L11 13" />
               <path d="M22 2L15 22L11 13L2 9L22 2Z" />
