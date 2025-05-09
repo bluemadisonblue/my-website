@@ -1,12 +1,10 @@
 "use client";
-import { SunIcon, MoonIcon, HomeIcon, LinkIcon } from '@heroicons/react/24/outline';
-import { useTheme } from 'next-themes';
+import { SunIcon, HomeIcon, LinkIcon } from '@heroicons/react/24/outline';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 export default function ClientLayout({ children }: { children: React.ReactNode }) {
   const [mounted, setMounted] = useState(false);
-  const { resolvedTheme, setTheme } = useTheme();
 
   useEffect(() => setMounted(true), []);
 
