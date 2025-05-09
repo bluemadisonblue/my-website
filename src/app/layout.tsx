@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import ClientLayout from "@/components/ClientLayout";
-import { ThemeProvider } from 'next-themes';
 
 export const metadata: Metadata = {
   title: "Enes Talip",
@@ -17,13 +16,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          <div className={`${inter.className} min-h-screen bg-white text-black dark:bg-black dark:text-white`}>
-            <ClientLayout>{children}</ClientLayout>
-          </div>
-        </ThemeProvider>
+    <html lang="en">
+      <body className={`dark ${inter.className} min-h-screen bg-black text-white`}>
+        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   );
