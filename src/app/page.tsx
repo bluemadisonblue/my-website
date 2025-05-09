@@ -77,62 +77,34 @@ export default function Home() {
       <section className="w-full max-w-2xl mx-auto mb-8 px-4">
         <h2 className="text-2xl font-bold text-white mb-4">Experience</h2>
         <div className="space-y-6">
-          {experiences.map((exp, idx) => {
-            const expanded = openIndex === idx;
-            return (
-              <div key={exp.company + exp.title} className="flex items-start gap-4">
-                {exp.logo ? (
-                  <a href={exp.logoLink || '#'} target="_blank" rel="noopener noreferrer" className="flex-shrink-0 w-12 h-12 flex items-center justify-center">
-                    <Image src={exp.logo} alt={exp.company} width={48} height={48} className="rounded-full object-contain" />
-                  </a>
-                ) : (
-                  <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
-                    {exp.company[0]}
-                  </div>
-                )}
-                <div className="flex-1 experience-content">
-                  <button
-                    className={`w-full text-left font-semibold text-white text-lg focus:outline-none flex items-center gap-2 py-1 px-0 rounded`}
-                    style={{ background: 'none' }}
-                    onClick={() => setOpenIndex(expanded ? null : idx)}
-                    aria-expanded={expanded}
-                  >
-                    <span>{exp.title}</span>
-                    {expanded && (
-                      <svg
-                        className="h-4 w-4 text-blue-400 animate-fade-in"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                      </svg>
-                    )}
-                  </button>
-                  <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-gray-400 text-sm mt-1">
-                    <span className="font-medium text-gray-300">{exp.company}</span>
-                    <span className="text-gray-500">|</span>
-                    <span>{exp.period}</span>
-                    <span className="text-gray-500">|</span>
-                    <span>{exp.location}</span>
-                  </div>
-                  <div
-                    ref={el => { contentRefs.current[idx] = el; }}
-                    className="transition-all duration-300 overflow-hidden"
-                    style={{
-                      maxHeight: expanded ? heights[idx] : 0,
-                      opacity: expanded ? 1 : 0,
-                      marginTop: expanded ? 8 : 0,
-                    }}
-                  >
-                    <div className="text-gray-300 text-base leading-relaxed">
-                      {exp.description}
-                    </div>
-                  </div>
+          {experiences.map((exp) => (
+            <div key={exp.company + exp.title} className="flex items-start gap-4">
+              {exp.logo ? (
+                <a href={exp.logoLink || '#'} target="_blank" rel="noopener noreferrer" className="flex-shrink-0 w-12 h-12 flex items-center justify-center">
+                  <Image src={exp.logo} alt={exp.company} width={48} height={48} className="rounded-full object-contain" />
+                </a>
+              ) : (
+                <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                  {exp.company[0]}
+                </div>
+              )}
+              <div className="flex-1">
+                <div className="w-full text-left font-semibold text-white text-lg flex items-center gap-2 py-1 px-0 rounded">
+                  <span>{exp.title}</span>
+                </div>
+                <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-gray-400 text-sm mt-1">
+                  <span className="font-medium text-gray-300">{exp.company}</span>
+                  <span className="text-gray-500">|</span>
+                  <span>{exp.period}</span>
+                  <span className="text-gray-500">|</span>
+                  <span>{exp.location}</span>
+                </div>
+                <div className="text-gray-300 text-base leading-relaxed mt-2">
+                  {exp.description}
                 </div>
               </div>
-            );
-          })}
+            </div>
+          ))}
         </div>
       </section>
 
