@@ -13,10 +13,10 @@ const experiences = [
     description: 'Worked on algorithms and AI projects, gaining hands-on experience in a hybrid environment.'
   },
   {
-    company: 'Freelance',
+    company: 'Upwork',
     logo: '/images/freelance.jpeg',
     logoLink: 'https://www.upwork.com/',
-    title: 'Freelance Software Developer',
+    title: 'Upwork Software Developer',
     period: 'Apr 2022 – Jun 2024',
     location: 'Atyrau, Kazakhstan (Remote)',
     description: 'Worked on various freelance software projects, focusing on web and mobile development.'
