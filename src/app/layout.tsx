@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import ClientLayout from "@/components/ClientLayout";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: "Enes Talip",
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body className={`dark ${inter.className} min-h-screen bg-black text-white`}>
         <ClientLayout>{children}</ClientLayout>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
