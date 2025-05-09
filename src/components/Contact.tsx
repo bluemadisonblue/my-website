@@ -25,9 +25,9 @@ const Contact = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Let's Connect</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Let&apos;s Connect</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Have a project in mind or want to chat? I'd love to hear from you!
+            Have a project in mind or want to chat? I&apos;d love to hear from you!
           </p>
         </motion.div>
 
@@ -129,7 +129,7 @@ const Contact = () => {
               <h3 className="text-2xl font-bold mb-6">Connect</h3>
               <div className="flex flex-wrap gap-4">
                 <a
-                  href="https://github.com/yourusername"
+                  href="https://github.com/bluemadisonblue"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:text-blue-500"

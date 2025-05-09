@@ -32,7 +32,7 @@ const About = () => {
         >
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">About Me</h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            I'm a passionate developer with experience in building modern web applications.
+            I&apos;m a passionate developer with experience in building modern web applications.
             I love learning new technologies and solving complex problems.
           </p>
         </motion.div>
