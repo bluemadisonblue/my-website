@@ -36,7 +36,7 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
           <button
             aria-label="Toggle Dark Mode"
             className="flex items-center justify-center text-gray-200 focus:outline-none hover:text-blue-400 transition"
-            onClick={() => alert('Who uses white theme?)')}
+            onClick={() => alert('Who uses light theme?')}
             type="button"
           >
             <SunIcon className="h-5 w-5" />
