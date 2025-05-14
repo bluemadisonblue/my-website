@@ -4,10 +4,10 @@ import Image from 'next/image';
 const experiences = [
   {
     company: 'ThoughtFlow',
-    logo: '/images/tf.jpeg',
+    logo: '/images/logo.png',
     logoLink: 'https://www.thoughtflow.ai/',
     title: 'CEO & Founder',
-    period: 'April 2025 - Present',
+    period: 'Apr 2025 - Present',
     location: 'London, United Kingdom',
     description: 'ThoughtFlow is a web-based AI workflow builder for structured thinking, reflection, decision-making, journaling, and content processing.'
   },
