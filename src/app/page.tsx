@@ -67,7 +67,17 @@ export default function Home() {
             <div key={exp.company + exp.title} className="flex items-start gap-4">
               {exp.logo ? (
                 <a href={exp.logoLink || '#'} target="_blank" rel="noopener noreferrer" className="flex-shrink-0 w-12 h-12 flex items-center justify-center">
-                  <Image src={exp.logo} alt={exp.company} width={48} height={48} className="rounded-full object-contain" />
+                  <Image 
+                    src={exp.logo} 
+                    alt={exp.company} 
+                    width={48} 
+                    height={48} 
+                    className="rounded-full object-contain"
+                    onError={(e) => {
+                      console.error(`Error loading image for ${exp.company}:`, e);
+                      e.currentTarget.src = '/images/freelance.jpeg'; // Fallback image
+                    }}
+                  />
                 </a>
               ) : (
                 <div className="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
