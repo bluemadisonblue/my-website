@@ -7,7 +7,7 @@ const experiences = [
     logo: '/images/tf.jpeg',
     logoLink: 'https://www.thoughtflow.ai/',
     title: 'CEO & Founder',
-    period: '2025-Present',
+    period: 'April 2025 - Present',
     location: 'London, United Kingdom',
     description: 'ThoughtFlow is a web-based AI workflow builder for structured thinking, reflection, decision-making, journaling, and content processing.'
   },
