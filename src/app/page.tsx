@@ -72,7 +72,7 @@ export default function Home() {
                     alt={exp.company} 
                     width={48} 
                     height={48} 
-                    className="object-contain"
+                    className="rounded-full object-contain"
                     onError={(e) => {
                       console.error(`Error loading image for ${exp.company}:`, e);
                       e.currentTarget.src = '/images/freelance.jpeg'; // Fallback image
