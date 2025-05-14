@@ -3,6 +3,15 @@ import Image from 'next/image';
 
 const experiences = [
   {
+    company: 'ThoughtFlow',
+    logo: '/images/tf.jpeg',
+    logoLink: 'https://www.thoughtflow.ai/',
+    title: 'CEO & Founder',
+    period: '2025-Present',
+    location: 'London, United Kingdom',
+    description: 'ThoughtFlow is a web-based AI workflow builder for structured thinking, reflection, decision-making, journaling, and content processing.'
+  },
+  {
     company: 'YCX',
     logo: '/images/YCX.jpeg',
     logoLink: 'https://www.ycx.ai/',
@@ -15,7 +24,7 @@ const experiences = [
     company: 'Upwork',
     logo: '/images/freelance.jpeg',
     logoLink: 'https://www.upwork.com/',
-    title: 'Upwork Software Developer',
+    title: 'Software Developer',
     period: 'Apr 2022 – Jun 2024',
     location: 'Atyrau, Kazakhstan (Remote)',
     description: 'Worked on various freelance software projects, focusing on web and mobile development.'
@@ -67,10 +76,10 @@ export default function Home() {
               )}
               <div className="flex-1">
                 <div className="w-full text-left font-semibold text-white text-lg flex items-center gap-2 py-1 px-0 rounded">
-                  <span>{exp.title}</span>
+                  <span>{exp.company}</span>
                 </div>
                 <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-gray-400 text-sm mt-1">
-                  <span className="font-medium text-gray-300">{exp.company}</span>
+                  <span className="font-medium text-gray-300">{exp.title}</span>
                   <span className="text-gray-500">|</span>
                   <span>{exp.period}</span>
                   <span className="text-gray-500">|</span>
