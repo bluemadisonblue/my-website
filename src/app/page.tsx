@@ -4,7 +4,7 @@ import Image from 'next/image';
 const experiences = [
   {
     company: 'ThinkFlow',
-    logo: '/images/logo.jpeg',
+    logo: '/images/logo_new.jpeg',
     logoLink: '',
     title: 'CEO & Founder',
     period: 'Apr 2025 - Present',
