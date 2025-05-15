@@ -7,7 +7,7 @@ const experiences = [
     logo: '/images/logo_new.jpeg',
     logoLink: 'https://www.instagram.com/thinkflow.ai?igsh=eWo2OGhhMG5ucnk=',
     title: 'CEO & Founder',
-    period: 'Apr 2025 - Present',
+    period: 'May 2025 - Present',
     location: 'London, United Kingdom',
     description: 'ThinkFlow is a web-based AI workflow builder for structured thinking, reflection, decision-making, journaling, and content processing.'
   },
