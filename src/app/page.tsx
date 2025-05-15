@@ -5,7 +5,7 @@ const experiences = [
   {
     company: 'ThinkFlow',
     logo: '/images/logo_new.jpeg',
-    logoLink: '',
+    logoLink: 'https://www.instagram.com/thinkflow.ai?igsh=eWo2OGhhMG5ucnk=',
     title: 'CEO & Founder',
     period: 'Apr 2025 - Present',
     location: 'London, United Kingdom',
