@@ -5,7 +5,7 @@ const experiences = [
   {
     company: 'Zimran',
     logo: '/images/zimran_logo.jpeg',
-    logoLink: '#',
+    logoLink: 'https://zimran.io',
     title: 'Junior CX Associate',
     period: 'December 2025 - Present',
     location: 'Astana, Kazakhstan (Remote)',
