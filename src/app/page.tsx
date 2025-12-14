@@ -3,6 +3,15 @@ import Image from 'next/image';
 
 const experiences = [
   {
+    company: 'Zimran',
+    logo: '/images/zimran_logo.jpeg',
+    logoLink: '#',
+    title: 'Junior CX Associate',
+    period: 'December 2025 - Present',
+    location: 'Astana, Kazakhstan (Remote)',
+    description: 'Resolved user inquiries with a strong technical focus, helping identify product issues, support troubleshooting, and improve internal documentation through structured issue analysis.'
+  },
+  {
     company: 'ThinkFlow',
     logo: '/images/logo_new.jpeg',
     logoLink: 'https://www.instagram.com/thinkflow.ai?igsh=eWo2OGhhMG5ucnk=',
@@ -92,8 +101,12 @@ export default function Home() {
                   <span className="font-medium text-gray-300">{exp.title}</span>
                   <span className="text-gray-500">|</span>
                   <span>{exp.period}</span>
-                  <span className="text-gray-500">|</span>
-                  <span>{exp.location}</span>
+                  {exp.location && (
+                    <>
+                      <span className="text-gray-500">|</span>
+                      <span>{exp.location}</span>
+                    </>
+                  )}
                 </div>
                 <div className="text-gray-300 text-base leading-relaxed mt-2">
                   {exp.description}
