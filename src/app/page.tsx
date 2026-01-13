@@ -121,11 +121,11 @@ export default function Home() {
         <h2 className="text-2xl font-bold text-white mb-4">Education</h2>
         <div className="space-y-4">
           <div className="flex items-center gap-4">
-            <a href="https://www.birmingham.ac.uk/" target="_blank" rel="noopener noreferrer">
-              <Image src="/images/university.jpg" alt="University of Birmingham" width={56} height={56} className="rounded-full object-cover border-2 border-gray-700" />
+            <a href="https://www.uwe.ac.uk/courses" target="_blank" rel="noopener noreferrer">
+              <Image src="/images/uwe.jpg" alt="University of the West of England (UWE)" width={56} height={56} className="rounded-full object-cover border-2 border-gray-700" />
             </a>
             <div className="flex-1">
-              <div className="font-semibold text-white">University of Birmingham</div>
+              <div className="font-semibold text-white">University of the West of England (UWE)</div>
               <div className="text-gray-400 text-sm">BSc AI and Computer Science • Sep 2024 – Jun 2028</div>
             </div>
           </div>
